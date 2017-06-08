@@ -46,21 +46,26 @@
         </div>
     </header>
 
-    <section>
-        <h4>Acubens is a PSD website template, but HTML template is coming very soon. With it you can build web sites easier, simpler, and faster.</h4>
-        <p>Dolore shank proident kielbasa kevin voluptae ribeye bresaola non strip steak esse veniam turkey meatball. Brisket</p>
-        <p>Dolore shank proident kielbasa kevin voluptae ribeye bresaola non strip steak esse veniam turkey meatball. Brisket</p>
+    <section class="section about">
+        <div class="about__wrapper wrapper">
+            <h2 class="about__title">So What's Acubens?</h2>
+            <h4 class="about__preamble">Acubens is a PSD website template, but HTML template is coming very soon. With it you can build web sites easier, simpler, and faster.</h4>
+            <p class="about__text">Dolore shank proident kielbasa kevin voluptae ribeye bresaola non strip steak esse veniam turkey meatball. Brisket</p>
+            <p class="about__text">Dolore shank proident kielbasa kevin voluptae ribeye bresaola non strip steak esse veniam turkey meatball. Brisket</p>
+        </div>
     </section>
 
-    <section>
-        <div>
-            <div><img src="images/img1.png" alt="Image 1"></div>
-            <div>
-                <div>
+    <section class="section pictures">
+        <div class="pictures__wrapper wrapper">
+            <div class="pictures__half">
+                <img src="images/img1.png" alt="Image 1">
+            </div>
+            <div class="pictures__half">
+                <div class="pictures__quarter">
                     <img src="images/img2.png" alt="Image 2">
                     <img src="images/img3.png" alt="Image 3">
                 </div>
-                <div>
+                <div class="pictures__quarter">
                     <img src="images/img4.png" alt="Image 4">
                     <img src="images/img5.png" alt="Image 5">
                 </div>
@@ -68,86 +73,110 @@
         </div>
     </section>
 
-    <section>
-        <div>
-            <h3>Stunning Looks & Functionality</h3>
-            <h4>Eliminate the stress of building a website with Acubens</h4>
-        </div>
-        <div>
-            <div>
-                <img src="images/heart.png" alt="Heart">
-                <h4>True Love</h4>
-                <p>Some Text</p>
+    <section class="section featurelist">
+        <div class="featurelist__wrapper wrapper">
+            <div class="featurelist__intro">
+                <h2 class="featurelist__title">Stunning Looks & Functionality</h2>
+                <h4 class="featurelist__preamble">Eliminate the stress of building a website with Acubens</h4>
             </div>
-            <div>
-                <img src="images/compass.png" alt="Compass">
-                <h4>User Friendly</h4>
-                <p>Some Text</p>
-            </div>
-            <div>
-                <img src="images/rocket.png" alt="Rocket">
-                <h4>Easy Setup</h4>
-                <p>Some Text</p>
-            </div>
-            <div>
-                <img src="images/gear.png" alt="Gear">
-                <h4>Clean Code</h4>
-                <p>Some Text</p>
+            <div class="featurelist__list-wrapper">
+                <ul class="featurelist__list">
+                    <li class="featurelist__item">
+                        <img class="featurelist__item-image" src="images/heart.png" alt="Heart">
+                        <h3 class="featurelist__item-title">True Love</h3>
+                        <p class="featurelist__item-text">Some Text</p>
+                    </li>
+                    <li class="featurelist__item">
+                        <img class="featurelist__item-image" src="images/compass.png" alt="Compass">
+                        <h3 class="featurelist__item-title">User Friendly</h3>
+                        <p class="featurelist__item-text">Some Text</p>
+                    </li>
+                    <li class="featurelist__item">
+                        <img class="featurelist__item-image" src="images/rocket.png" alt="Rocket">
+                        <h3 class="featurelist__item-title">Easy Setup</h3>
+                        <p class="featurelist__item-text">Some Text</p>
+                    </li>
+                    <li class="featurelist__item">
+                        <img class="featurelist__item-image" src="images/gear.png" alt="Gear">
+                        <h3 class="featurelist__item-title">Clean Code</h3>
+                        <p class="featurelist__item-text">Some Text</p>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-                <figure class="item">
-                    <figcaption>Bresaola ball tip frankfurter, proident nulla irure cupidatat c</figcaption>
-                    <img src="images/Zak.png" alt="Gear">
-                    <h4>Zak Island</h4>
-                    <p>Game Designer</p>
-                </figure>
-                <figure class="item active">
-                    <figcaption>Bresaola ball tip frankfurter, proident nulla irure cupidatat c</figcaption>
-                    <img src="images/Aura.png" alt="Aura">
-                    <h4>Zak Island</h4>
-                    <p>Game Designer</p>
-                </figure>
-                <figure class="item">
-                    <figcaption>Bresaola ball tip frankfurter, proident nulla irure cupidatat c</figcaption>
-                    <img src="images/Peppa.png" alt="Peppa">
-                    <h4>Zak Island</h4>
-                    <p>Game Designer</p>
-                </figure>
+    <section class="section employee">
+        <div class="employee__wrapper wrapper">
+            <div class="employee__list-wrapper">
+                <ul class="employee__list">
+                    <li class="employee__list-item">
+                        <q class="employee__quote">Bresaola ball tip frankfurter, proident nulla irure cupidatat c</q>
+                        <img class="employee__image" src="images/Zak.png" alt="Gear">
+                        <h3 class="employee__name">Zak Island</h3>
+                        <p class="employee__role">Game Designer</p>
+                    </li>
+                    <li class="employee__list-item employee__list-item--active">
+                        <q class="employee__quote">Bresaola ball tip frankfurter, proident nulla irure cupidatat c</q>
+                        <img class="employee__image" src="images/Aura.png" alt="Aura">
+                        <h3 class="employee__name">Aura Brooks</h3>
+                        <p class="employee__role">Graphic Designer</p>
+                    </li>
+                    <li class="employee__list-item">
+                        <q class="employee__quote">Bresaola ball tip frankfurter, proident nulla irure cupidatat c</q>
+                        <img class="employee__image" src="images/Peppa.png" alt="Peppa">
+                        <h3 class="employee__name">Peppa George</h3>
+                        <p class="employee__role">Lead Architect</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="employee__nav">
+                <ul class="employee__nav-indicators">
+                    <li class="employee__nav-indicator">1</li>
+                    <li class="employee__nav-indicator employee__nav-indicator--active">2</li>
+                    <li class="employee__nav-indicator">3</li>
+                </ul>
             </div>
         </div>
-        <div>
-            <ul class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0"></li>
-                <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ul>
+    </section>
+
+    <section class="section kicker">
+        <div class="kicker__wrapper wrapper">
+            <h2 class="kicker__title">Experience Acubens</h2>
+            <h3 class="kicker__text">Get started with tomorrow's platform today!</h3>
+            <button class="kicker__button">Download Now</button>
         </div>
     </section>
 
-    <section>
-        <div>
-            <h2>Experience Acubens</h2>
-            <h3>Get started with tomorrow's platform today!</h3>
-            <button>Download Now</button>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__copyrights">Copyright..</div>
+            <div class="footer__socialmedia-wrapper">
+                <ul class="footer__socialmedia-list">
+                    <li class="footer__socialmedia-item">
+                        <a class="footer__socialmedia-link" href="#">
+                            <img class="footer__socialmedia-logo" src="#Facebook">
+                        </a>
+                    </li>
+                    <li class="footer__socialmedia-item">
+                        <a class="footer__socialmedia-link" href="#">
+                            <img class="footer__socialmedia-logo" src="#Twitter">
+                        </a>
+                    </li>
+                    <li class="footer__socialmedia-item">
+                        <a class="footer__socialmedia-link" href="#">
+                            <img class="footer__socialmedia-logo" src="#GooglePlus">
+                        </a>
+                    </li>
+                    <li class="footer__socialmedia-item">
+                        <a class="footer__socialmedia-link" href="#">
+                            <img class="footer__socialmedia-logo" src="#LinkedIn">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </section>
-
-    <section>
-        <div>Copyright..</div>
-        <div>
-            <ul>
-                <a>Facebook</a>
-                <a>Twitter</a>
-                <a>Google Plus</a>
-                <a>Linkedin</a>
-            </ul>
-        </div>
-    </section>
+    </footer>
 
 </body>
 </html>
