@@ -1,0 +1,347 @@
+html {
+
+}
+
+body {
+  font-family: Arial;
+  font-size: 16px;
+  color: #000;
+  background-color: #FFF;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+section, header, footer {
+  width: 100vw;
+}
+
+
+h1 {
+  font-size: 3rem;
+  margin: 0.8em 0 0.2em 0;
+}
+
+
+.section {
+
+}
+
+  .wrapper {
+    width: 100%;
+    max-width: 1216px;
+    margin: 0 auto;
+    padding: 0 25px;
+    box-sizing: border-box;
+  }
+
+.pageheader {
+
+}
+
+  .pageheader__wrapper {
+
+  }
+
+    .pageheader__menu {
+
+    }
+
+    .pageheader__logo {
+
+    }
+
+      .logo {
+
+      }
+
+      .logo__link {
+
+      }
+
+      .logo__image {
+
+      }
+
+    .pageheader__menu-toggle {
+
+    }
+
+
+.fa {
+
+}
+
+.fa-bars {
+
+}
+
+.pageheader__nav {
+
+}
+
+.nav {
+
+}
+
+.nav__list {
+
+}
+
+.nav__list-item {
+
+}
+
+.nav__link {
+
+}
+
+.nav__link--active {
+
+}
+
+.pageheader__content {
+
+}
+
+.content {
+
+}
+
+.content__title {
+
+}
+
+.content__text {
+
+}
+
+.content__button {
+
+}
+
+.primary-button {
+
+}
+
+.about {
+
+}
+
+.about__wrapper {
+
+}
+
+.about__title {
+
+}
+
+.about__preamble {
+
+}
+
+.about__text {
+
+}
+
+.pictures {
+
+}
+
+  .pictures__wrapper {
+    display: flex;
+    flex-flow: wrap;
+    padding: 0 12.5px;
+
+  }
+
+  .pictures__half {
+    display: flex;
+    flex: 0 0 50%;
+
+  }
+
+  @media(max-width: 768px) {
+    .pictures__half {
+      flex: 0 0 100%;
+    }
+  }
+
+  .pictures__quarter {
+    flex: 0 0 50%;
+  }
+
+  .pictures__quarter img {
+    /*padding-left: 25px;
+    padding-bottom: 25px;*/
+    box-sizing: border-box;
+
+  }
+
+  .pictures__quarter img:last-child {
+    /*padding-bottom: 0;*/
+  }
+
+  .pictures__half .image, .pictures__quarter .image {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12.5px;
+    font: 0/0 a;
+  }
+
+  .pictures__half img, .pictures__quarter img {
+    width: 100%;
+    height: auto;
+  }
+
+.featurelist {
+
+}
+
+.featurelist__wrapper {
+
+}
+
+.featurelist__intro {
+
+}
+
+.featurelist__title {
+
+}
+
+.featurelist__preamble {
+
+}
+
+.featurelist__list-wrapper {
+
+}
+
+.featurelist__list {
+
+}
+
+.featurelist__item {
+
+}
+
+.featurelist__item-image {
+
+}
+
+.featurelist__item-title {
+
+}
+
+.featurelist__item-text {
+
+}
+
+.employee {
+
+}
+
+.employee__wrapper {
+
+}
+
+.employee__list-wrapper {
+
+}
+
+.employee__list {
+
+}
+
+.employee__list-item {
+
+}
+
+.employee__quote {
+
+}
+
+.employee__image {
+
+}
+
+.employee__name {
+
+}
+
+.employee__role {
+
+}
+
+.employee__list-item--active {
+
+}
+
+.employee__nav {
+
+}
+
+.employee__nav-indicators {
+
+}
+
+.employee__nav-indicator {
+
+}
+
+.employee__nav-indicator--active {
+
+}
+
+.kicker {
+
+}
+
+.kicker__wrapper {
+
+}
+
+.kicker__title {
+
+}
+
+.kicker__text {
+
+}
+
+.kicker__button {
+
+}
+
+.footer {
+
+}
+
+.footer__wrapper {
+
+}
+
+.footer__copyrights {
+
+}
+
+.footer__socialmedia-wrapper {
+
+}
+
+.footer__socialmedia-list {
+
+}
+
+.footer__socialmedia-item {
+
+}
+
+.footer__socialmedia-link {
+
+}
+
+.footer__socialmedia-logo {
+
+}
