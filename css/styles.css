@@ -1,0 +1,424 @@
+html {
+
+}
+
+body {
+  font-family: Arial;
+  font-size: 16px;
+  color: #000;
+  background-color: #FFF;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+section, header, footer {
+  width: 100vw;
+}
+
+
+h1 {
+  font-size: 3rem;
+  margin: 0.8em 0 0.2em 0;
+}
+
+h2 {
+  text-align: center;     /* will center text in <p>, which is not a flex item */
+  color: #85d9bf;
+}
+
+h3{}
+
+h4{}
+
+
+.section {
+
+}
+
+  .wrapper {
+    width: 100%;
+    max-width: 1216px;
+    margin: 0 auto;
+    padding: 0 25px;
+    box-sizing: border-box;
+  }
+
+.pageheader {
+  background-color: #3f3f49;
+}
+
+  .pageheader__wrapper {
+    color: #FFF;
+  }
+
+    .pageheader__menu {
+      border-bottom: thin solid #fff;
+      overflow: auto;
+      width: 100%
+    }
+
+    .pageheader__logo {
+      float: left;
+    }
+
+      .logo {
+
+      }
+
+      .logo__link {
+
+      }
+
+      .logo__image {
+
+      }
+
+    .pageheader__menu-toggle {
+
+    }
+
+
+.fa {
+
+}
+
+.fa-bars {
+
+}
+
+.pageheader__nav {
+  float: right;
+}
+
+.nav {
+}
+
+.nav__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav__list-item {
+  float: right;
+}
+
+.nav__link {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav__link--active {
+
+}
+
+.pageheader__content {
+}
+
+.content {
+  display: flex;           /* establish flex container */
+  flex-direction: column;  /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center;     /* center items horizontally, in this case */
+  height: 350px;
+}
+
+.content__title {
+  text-align: center;
+}
+
+.content__text {
+  text-align: center;     /* will center text in <p>, which is not a flex item */
+}
+
+.content__button {
+  text-align: center;     /* will center text in <p>, which is not a flex item */
+}
+
+.primary-button {
+
+}
+
+.about{
+
+}
+
+.about strong {
+  color: #85d9bf;
+}
+
+.about__wrapper {
+
+}
+
+.about__title {
+
+}
+
+.about__preamble {
+
+}
+
+.about__text {
+
+}
+
+.pictures {
+  background-color: #f4f3f8;
+}
+
+  .pictures__wrapper {
+    display: flex;
+    flex-flow: wrap;
+    padding: 0 12.5px;
+
+  }
+
+  .pictures__half {
+    display: flex;
+    flex: 0 0 50%;
+  }
+
+  @media(max-width: 768px) {
+    .pictures__half {
+      flex: 0 0 100%;
+    }
+  }
+
+  .pictures__quarter {
+    flex: 0 0 50%;
+  }
+
+  .pictures__quarter img {
+    box-sizing: border-box;
+  }
+
+  .pictures__quarter img:last-child {
+  }
+
+  .pictures__half .image, .pictures__quarter .image {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12.5px;
+    font: 0/0 a;
+  }
+
+  .pictures__half img, .pictures__quarter img {
+    width: 100%;
+    height: auto;
+  }
+
+.features {
+
+}
+
+.features__wrapper {
+
+}
+
+.features__intro {
+
+}
+
+.features__title {
+
+}
+
+.features__preamble {
+  text-align: center;
+}
+
+.features__list-wrapper {
+
+}
+
+.featurelist {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;     /* make main axis horizontal (default setting) */
+  justify-content: space-around;; /* center items horizontally, in this case */
+  align-items: center;     /* center items vertically, in this case */
+  height: 200px;
+}
+
+.featurelist__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;        /* for single line flex container */
+  align-content: center;      /* for multi-line flex container */
+  flex-direction: column;  /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center;     /* center items horizontally, in this case */
+  height: 200px;
+}
+
+.featurelist__item-image {
+
+}
+
+.featurelist__item-title {
+
+}
+
+.featurelist__item-text {
+
+}
+
+.employee {
+  background-color: #f4f3f8;
+}
+
+.employee__wrapper {
+
+}
+
+.employee__list-wrapper {
+
+}
+
+.employee__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;     /* make main axis horizontal (default setting) */
+  justify-content: space-around;; /* center items horizontally, in this case */
+  align-items: center;     /* center items vertically, in this case */
+  height: 200px;
+}
+
+.employee__list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;        /* for single line flex container */
+  align-content: center;      /* for multi-line flex container */
+  flex-direction: column;  /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center;     /* center items horizontally, in this case */
+  height: 200px;
+}
+
+.employee__quote {
+
+}
+
+.employee__image {
+
+}
+
+.employee__name {
+
+}
+
+.employee__role {
+
+}
+
+.employee__list-item--active {
+
+}
+
+.employee__nav {
+
+}
+
+.employee__nav-indicators {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;     /* make main axis horizontal (default setting) */
+  justify-content: center; /* center items horizontally, in this case */
+  align-items: center;     /* center items vertically, in this case */
+  height: 20px;
+}
+
+.employee__nav-indicator {
+  display: flex;
+  align-items: center;        /* for single line flex container */
+  align-content: center;      /* for multi-line flex container */
+  flex-direction: column;  /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center;     /* center items horizontally, in this case */
+  height: 20px;
+}
+
+.employee__nav-indicator--active {
+
+}
+
+.kicker {
+  background-color: #3f3f49;
+}
+
+.kicker__wrapper {
+  display: flex;           /* establish flex container */
+  flex-direction: column;  /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center;     /* center items horizontally, in this case */
+  height: 350px;
+}
+
+.kicker__title {
+  color: #FFF;
+}
+
+.kicker__text {
+  color: #FFF;
+}
+
+.kicker__button {
+
+}
+
+.footer {
+
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: row;     /* make main axis horizontal (default setting) */
+  justify-content: space-between;
+}
+
+.footer__copyrights {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 20px;
+}
+
+.footer__socialmedia-wrapper {
+}
+
+.footer__socialmedia-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;     /* make main axis horizontal (default setting) */
+  height: 20px;
+}
+
+.footer__socialmedia-item {
+
+}
+
+.footer__socialmedia-link {
+
+}
+
+.footer__socialmedia-logo {
+
+}
