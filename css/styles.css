@@ -42,6 +42,12 @@ h1 {
   margin: 0em 0 0.2em 0;
 }
 
+@media(max-width: 360px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
 h2 {
   text-align: center;     /* will center text in <p>, which is not a flex item */
   color: #85d9bf;
@@ -255,7 +261,7 @@ button:hover {
   .pictures__wrapper {
     display: flex;
     flex-flow: wrap;
-    padding: 0 12.5px;
+    padding: 25px 12.5px;
 
   }
 
@@ -376,7 +382,7 @@ button:hover {
 
 .employee {
   background-color: #f4f3f8;
-  padding: 0 40px 20px 40px;
+  padding: 15px 0 15px 0;
 }
 
 .employee__wrapper {
@@ -397,7 +403,6 @@ button:hover {
   justify-content: space-around; /* center items horizontally, in this case */
   align-items: center;     /* center items vertically, in this case */
   height: auto;
-  padding: 40px 40px;
 }
 
 .employee__list-item {
@@ -409,32 +414,24 @@ button:hover {
   justify-content: center; /* center items vertically, in this case */
   align-items: center;     /* center items horizontally, in this case */
   height: auto;
-  flex: 0 0 25%;
+  flex: 0 0 33%;
+  padding: 0 12.5px 0 12.5px;
 }
 
-@media(max-width: 680px) {
+@media(max-width: 935px) {
   .employee__list {
-    flex-wrap: wrap;
-  }
-  .employee__list-item {
-    flex: 0 0 50%;
-  }
-}
-
-@media(max-width: 360px) {
-  .featurelist {
     flex-wrap: wrap;
     flex-direction: column
   }
-  .featurelist__item {
-    flex: 0 0 25%;
+  .employee__list-item {
+    flex: 0 0 100%;
   }
 }
 
 
 .employee__quote {
   position:relative;
-  padding:15px;
+  padding: 0 15px 0 15px;
   margin:50px 0 0.5em;
   color:#A6A6A6;
   background:#FAFAFC;
@@ -448,7 +445,7 @@ button:hover {
   position: absolute;
   bottom:-15px;
   left:120px;
-  border-width: 0px 0px 0px 0px;
+  border-width: 0;
   border-style:solid;
   height: 0;
   border-left: 20px solid transparent;
@@ -456,9 +453,22 @@ button:hover {
   border-top: 20px solid #FAFAFC;
 }
 
+@media(max-width: 300px) {
+  .employee__quote {
+    width: 125px;
+  }
+  .employee__quote:after {
+    left:72.5px;
+  }
+}
+
 .employee__quote q {
   font-size:28px;
   line-height:1.25em;
+}
+
+.employee__list-item--active {
+  padding-top: 5px;
 }
 
 .employee__list-item--active .employee__quote {
@@ -525,7 +535,8 @@ button:hover {
   flex-direction: column;  /* make main axis vertical */
   justify-content: center; /* center items vertically, in this case */
   align-items: center;     /* center items horizontally, in this case */
-  height: 350px;
+  height: auto;
+  padding: 60px;
 }
 
 .kicker__title {
