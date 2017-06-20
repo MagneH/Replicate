@@ -38,8 +38,8 @@ section, header, footer {
 
 
 h1 {
-  font-size: 3rem;
-  margin: 0.8em 0 0.2em 0;
+  font-size: 3.5rem;
+  margin: 0em 0 0.2em 0;
 }
 
 h2 {
@@ -47,7 +47,9 @@ h2 {
   color: #85d9bf;
 }
 
-h3{}
+h3{
+  text-align: center;     /* will center text in <p>, which is not a flex item */
+}
 
 h4{}
 
@@ -70,6 +72,7 @@ strong {
 
 .pageheader {
   background-image: url("../images/background.png");
+  background-size:cover;
 }
 
   .pageheader__wrapper {
@@ -86,7 +89,7 @@ strong {
     }
 
     .pageheader__logo {
-      padding: 40px 16px 50px 46px;
+      padding: 30px 16px 37px 46px;
     }
 
       .logo {
@@ -102,16 +105,11 @@ strong {
       }
 
     .pageheader__menu-toggle {
-      padding: 45.5px 16px 45.5px 0;
+      padding: 35px 16px 27px 0;
+      display: none;
     }
 
-
-.fa {
-
-}
-
 .fa-bars {
-  display: none;
 }
 
 .pageheader__nav {
@@ -129,7 +127,7 @@ strong {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  padding: 45.5px 30px 45.5px 0px;
+  padding: 37px 30px 27px 0px;
 }
 
 .nav__list-item {
@@ -161,8 +159,15 @@ strong {
 }
 
 @media(max-width: 690px) {
-  .fa-bars {
+  .pageheader__menu-toggle {
     display: flex;
+  }
+  .fa__bars{
+    display: flex;
+    align-items: flex-end;
+  }
+  .pageheader__nav {
+    display: none;
   }
 }
 
@@ -175,7 +180,7 @@ strong {
   flex-direction: column;  /* make main axis vertical */
   justify-content: center; /* center items vertically, in this case */
   align-items: center;     /* center items horizontally, in this case */
-  height: 350px;
+  height: 372px;
 }
 
 .content__title {
@@ -187,6 +192,7 @@ strong {
 .content__text {
   text-align: center;    /* will center text in <p>, which is not a flex item */
   font-family: source-sans-pro;
+  font-size: 1.5rem;
 }
 
 .content__button {
@@ -290,12 +296,12 @@ strong {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   display: flex;
   flex-direction: row;     /* make main axis horizontal (default setting) */
-  justify-content: space-around;; /* center items horizontally, in this case */
+  flex: 0 0 100%;
+  justify-content: space-around; /* center items horizontally, in this case */
   align-items: center;     /* center items vertically, in this case */
-  height: 200px;
+  height: auto;
   padding: 40px 40px;
 }
 
@@ -307,7 +313,27 @@ strong {
   flex-direction: column;  /* make main axis vertical */
   justify-content: center; /* center items vertically, in this case */
   align-items: center;     /* center items horizontally, in this case */
-  height: 200px;
+  height: auto;
+  flex: 0 0 25%;
+}
+
+@media(max-width: 680px) {
+  .featurelist {
+    flex-wrap: wrap;
+  }
+  .featurelist__item {
+    flex: 0 0 50%;
+  }
+}
+
+@media(max-width: 360px) {
+  .featurelist {
+    flex-wrap: wrap;
+    flex-direction: column
+  }
+  .featurelist__item {
+    flex: 0 0 25%;
+  }
 }
 
 .featurelist__item-image {
@@ -339,12 +365,11 @@ strong {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   display: flex;
   flex-direction: row;     /* make main axis horizontal (default setting) */
-  justify-content: space-around;; /* center items horizontally, in this case */
+  justify-content: space-between; /* center items horizontally, in this case */
   align-items: center;     /* center items vertically, in this case */
-  height: 200px;
+  height: auto;
 }
 
 .employee__list-item {
@@ -410,6 +435,7 @@ strong {
 
 .kicker {
   background-image: url("../images/background.png");
+  background-size:cover;
 }
 
 .kicker__wrapper {
@@ -423,11 +449,13 @@ strong {
 .kicker__title {
   text-transform: uppercase;
   font-family: josefinslab-bold;
+  font-size: 2rem;
   color: #FFF;
 }
 
 .kicker__text {
   font-family: source-sans-pro;
+  font-size: 2rem;
   color: #FFF;
 }
 
@@ -451,6 +479,8 @@ strong {
   padding: 0;
   overflow: hidden;
   height: 40px;
+  font-size: 0.8rem;
+  color: #D7D7D7;
 }
 
 .footer__socialmedia-wrapper {
@@ -472,7 +502,7 @@ strong {
 
 .footer__socialmedia-link {
   color: #85d9bf;
-  font-size: 2rem;
+  font-size: 1.2rem;
   padding: 0px 5px;
 }
 
