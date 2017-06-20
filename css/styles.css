@@ -1,3 +1,23 @@
+@font-face {
+    font-family: titillium-semibold;
+    src: url("../fonts/titillium-semibold-webfont.woff");
+}
+
+@font-face {
+    font-family: josefinslab-bold;
+    src: url("../fonts/josefinslab-bold-webfont.woff2");
+}
+
+@font-face {
+    font-family: source-sans-pro;
+    src: url("../fonts/Source-Sans-Pro.woff2");
+}
+
+@font-face {
+    font-family: footer__socialmedia-link;
+    src: url("../fonts/fontawesome-webfont.woff2");
+}
+
 html {
 
 }
@@ -31,6 +51,10 @@ h3{}
 
 h4{}
 
+strong {
+  color: #85d9bf;
+}
+
 
 .section {
 
@@ -45,7 +69,7 @@ h4{}
   }
 
 .pageheader {
-  background-color: #3f3f49;
+  background-image: url("../images/background.png");
 }
 
   .pageheader__wrapper {
@@ -53,13 +77,16 @@ h4{}
   }
 
     .pageheader__menu {
-      border-bottom: thin solid #fff;
+      border-bottom: 1px solid #5C5C66;
       overflow: auto;
-      width: 100%
+      width: 100%;
+      display: flex;
+      flex-direction: row;     /* make main axis horizontal (default setting) */
+      justify-content: space-between;
     }
 
     .pageheader__logo {
-      float: left;
+      padding: 40px 16px 50px 46px;
     }
 
       .logo {
@@ -75,7 +102,7 @@ h4{}
       }
 
     .pageheader__menu-toggle {
-
+      padding: 45.5px 16px 45.5px 0;
     }
 
 
@@ -84,11 +111,11 @@ h4{}
 }
 
 .fa-bars {
-
+  display: none;
 }
 
 .pageheader__nav {
-  float: right;
+
 }
 
 .nav {
@@ -96,28 +123,51 @@ h4{}
 
 .nav__list {
   list-style-type: none;
+  display: flex;
+  flex-direction: row;     /* make main axis horizontal (default setting) */
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  padding: 45.5px 30px 45.5px 0px;
 }
 
 .nav__list-item {
-  float: right;
+  display: block;
+  color: #D1D0D5;
+  text-align: center;
+  padding: 0px 20px 0px 20px;
+  font-size: 0.7rem;
+  font-family: titillium-semibold;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .nav__link {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+
 }
 
-.nav__link--active {
+.nav__link--active{
+  position: relative;
+}
 
+.nav__link--active:after {
+  content: '';
+  border-bottom: 2px solid #85d9bf;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+}
+
+@media(max-width: 690px) {
+  .fa-bars {
+    display: flex;
+  }
 }
 
 .pageheader__content {
+
 }
 
 .content {
@@ -130,10 +180,13 @@ h4{}
 
 .content__title {
   text-align: center;
+  font-family: josefinslab-bold;
+  text-transform: uppercase;
 }
 
 .content__text {
-  text-align: center;     /* will center text in <p>, which is not a flex item */
+  text-align: center;    /* will center text in <p>, which is not a flex item */
+  font-family: source-sans-pro;
 }
 
 .content__button {
@@ -148,16 +201,12 @@ h4{}
 
 }
 
-.about strong {
-  color: #85d9bf;
-}
-
 .about__wrapper {
 
 }
 
 .about__title {
-
+  font-family: titillium-semibold;
 }
 
 .about__preamble {
@@ -218,7 +267,7 @@ h4{}
 }
 
 .features__wrapper {
-
+  font-family: source-sans-pro;
 }
 
 .features__intro {
@@ -226,7 +275,7 @@ h4{}
 }
 
 .features__title {
-
+  font-family: titillium-semibold;
 }
 
 .features__preamble {
@@ -247,6 +296,7 @@ h4{}
   justify-content: space-around;; /* center items horizontally, in this case */
   align-items: center;     /* center items vertically, in this case */
   height: 200px;
+  padding: 40px 40px;
 }
 
 .featurelist__item {
@@ -274,10 +324,11 @@ h4{}
 
 .employee {
   background-color: #f4f3f8;
+  padding: 40px 40px;
 }
 
 .employee__wrapper {
-
+  font-family: source-sans-pro;
 }
 
 .employee__list-wrapper {
@@ -358,7 +409,7 @@ h4{}
 }
 
 .kicker {
-  background-color: #3f3f49;
+  background-image: url("../images/background.png");
 }
 
 .kicker__wrapper {
@@ -370,10 +421,13 @@ h4{}
 }
 
 .kicker__title {
+  text-transform: uppercase;
+  font-family: josefinslab-bold;
   color: #FFF;
 }
 
 .kicker__text {
+  font-family: source-sans-pro;
   color: #FFF;
 }
 
@@ -389,13 +443,14 @@ h4{}
   display: flex;
   flex-direction: row;     /* make main axis horizontal (default setting) */
   justify-content: space-between;
+  padding: 10px 0px;
 }
 
 .footer__copyrights {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  height: 20px;
+  height: 40px;
 }
 
 .footer__socialmedia-wrapper {
@@ -408,7 +463,7 @@ h4{}
   overflow: hidden;
   display: flex;
   flex-direction: row;     /* make main axis horizontal (default setting) */
-  height: 20px;
+  height: 40px;
 }
 
 .footer__socialmedia-item {
@@ -416,7 +471,9 @@ h4{}
 }
 
 .footer__socialmedia-link {
-
+  color: #85d9bf;
+  font-size: 2rem;
+  padding: 0px 5px;
 }
 
 .footer__socialmedia-logo {
