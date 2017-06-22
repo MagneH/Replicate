@@ -122,6 +122,7 @@ a {
 }
 
 .pageheader__menu {
+  overflow: hidden;
   border-bottom: 1px solid #5C5C66;
   overflow: auto;
   width: 100%;
@@ -553,12 +554,13 @@ a {
   margin: 0;
 }
 
-.employee__list-item--active {
-
+.employee__list-item--active .employee__image {
+  padding: 15px 30px 0 30px;
 }
 
 .employee__nav {
-
+  margin: 0;
+  padding: 0;
 }
 
 .employee__nav-indicators {
@@ -569,7 +571,7 @@ a {
   flex-direction: row;     /* make main axis horizontal (default setting) */
   justify-content: center; /* center items horizontally, in this case */
   align-items: center;     /* center items vertically, in this case */
-  padding-bottom: 25px;
+  padding:0 0 25px 0;
 }
 
 .employee__nav-indicator {
@@ -579,7 +581,7 @@ a {
   flex-direction: column;  /* make main axis vertical */
   justify-content: center; /* center items vertically, in this case */
   align-items: center;     /* center items horizontally, in this case */
-  padding-bottom: 0 0 10px 0;
+  padding-bottom: 0 12.5px 10px 0;
 }
 
 .employee__nav-indicator--active {
