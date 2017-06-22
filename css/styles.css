@@ -555,7 +555,7 @@ a {
 }
 
 .employee__list-item--active .employee__image {
-  padding: 15px 30px 0 30px;
+  padding: 15px 30px 15px 30px;
 }
 
 .employee__nav {
