@@ -42,12 +42,6 @@ h1 {
   margin: 0em 0 0.2em 0;
 }
 
-@media(max-width: 360px) {
-  h1 {
-    font-size: 2rem;
-  }
-}
-
 h2 {
   font-family: source-sans-pro;
   font-size: 2.1rem;
@@ -263,6 +257,19 @@ a {
   text-align: center;     /* will center text in <p>, which is not a flex item */
 }
 
+@media(max-width: 520px) {
+  .content {
+    height: auto;
+    padding: 30px 0;
+  }
+  .content__title{
+    font-size: 2rem;
+  }
+  .content__text {
+    font-size: 1rem;
+  }
+}
+
 .primary-button {
 
 }
@@ -288,8 +295,9 @@ a {
 }
 
 .about__text {
+  font-size: 1.1rem;
+  font-family: source-sans-pro;
   color: #403B4F;
-  line-height: 2;
   padding: 5px 0 5px 0;
 }
 
@@ -393,12 +401,22 @@ a {
   padding: 0 30px;
 }
 
+.featurelist__item-image {
+  padding-bottom: 30px;
+}
+
 @media(max-width: 680px) {
   .featurelist {
     flex-wrap: wrap;
+    padding: 20px 0;
   }
   .featurelist__item {
-    flex: 0 0 50%;
+    flex: 0 0 100%;
+    padding: 0 10px 15px 0;
+    max-width: 300px;
+  }
+  .featurelist__item-image {
+    padding-bottom: 20px;
   }
 }
 
@@ -408,13 +426,10 @@ a {
     flex-direction: column;
   }
   .featurelist__item {
-    flex: 0 0 25%;
   }
 }
 
-.featurelist__item-image {
-  padding-bottom: 30px;
-}
+
 
 .featurelist__item-title {
   color: #403B4F;
@@ -472,16 +487,6 @@ a {
 
 .employee__personalia {
 
-}
-
-@media(max-width: 935px) {
-  .employee__list {
-    flex-wrap: wrap;
-    flex-direction: column
-  }
-  .employee__list-item {
-    flex: 0 0 100%;
-  }
 }
 
 .employee__quote {
@@ -586,6 +591,19 @@ a {
 
 .employee__nav-indicator--active {
 
+}
+
+@media(max-width: 935px) {
+  .employee__list {
+    flex-wrap: wrap;
+    flex-direction: column
+  }
+  .employee__list-item {
+    flex: 0 0 100%;
+  }
+  .employee__quote {
+    max-width: 300px;
+  }
 }
 
 .kicker {
