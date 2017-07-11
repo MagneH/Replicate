@@ -620,16 +620,74 @@ a {
   justify-content: center; /* center items vertically, in this case */
   align-items: center;     /* center items horizontally, in this case */
   height: auto;
-  padding: 65px;
+  padding: 65px 0;
 }
 
-.kicker__title {
+
+.kicker__title  {
+  display: inline-block;
+  position: relative;
+  line-height: 1;
+  text-align: center;
   text-transform: uppercase;
   font-family: josefinslab-bold;
   font-size: 2.1rem;
   color: #FFF;
   padding: 25px 0 0 0;
   margin: 0;
+}
+.kicker__title:before,
+.kicker__title:after {
+  content: "";
+  position: absolute;
+  height: 0px;
+  border-bottom: 1px solid #5C5C66;
+  top: 40px;
+  width: 400px;
+}
+
+@media(max-width: 1200px) {
+  .kicker__title:before,
+  .kicker__title:after {
+    width: 300px;
+  }
+}
+
+@media(max-width: 1000px) {
+  .kicker__title:before,
+  .kicker__title:after {
+    width: 250px;
+  }
+}
+
+@media(max-width: 900px) {
+  .kicker__title:before,
+  .kicker__title:after {
+    width: 200px;
+  }
+}
+
+@media(max-width: 800px) {
+  .kicker__title:before,
+  .kicker__title:after {
+    width: 100px;
+  }
+}
+
+@media(max-width: 600px) {
+  .kicker__title:before,
+  .kicker__title:after {
+    width: 50px;
+  }
+}
+
+.kicker__title:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.kicker__title:after {
+  left: 100%;
+  margin-left: 15px;
 }
 
 .kicker__text {
@@ -651,12 +709,12 @@ a {
   display: flex;
   flex-direction: row;     /* make main axis horizontal (default setting) */
   justify-content: space-between;
-  padding: 10px 0 0 0;
+  padding: 5px 0 0 0;
 }
 
 .footer__copyrights {
   margin: 0;
-  padding: 0;
+  padding: 10px 5px;
   overflow: hidden;
   font-size: 0.8rem;
   color: #D7D7D7;
@@ -680,8 +738,8 @@ a {
 
 .footer__socialmedia-link {
   color: #85d9bf;
-  font-size: 1.2rem;
-  padding: 0px 5px;
+  font-size: 2rem;
+  padding: 5px 5px;
 }
 
 .footer__socialmedia-logo {
