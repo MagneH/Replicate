@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-    /* Every time the window is scrolled ... */
     $(window).scroll( function(){
         $('.hideme').each( function(i){
             var bottom_of_object = $(this).position().top + $(this).outerHeight();
@@ -19,5 +18,9 @@ $(document).ready(function() {
     });
   	$('.hamburger').click(function(){
   		$(this).toggleClass('open');
+      $('.pageheader__nav').toggle(
+        function(){$('.pageheader__nav').css({'height': '100'});},
+        function(){$('.pageheader__nav').css({'display': '0'});},
+      );
   	});
 });
