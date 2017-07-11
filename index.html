@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css?v=1.0">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
@@ -27,7 +27,12 @@
                     <a class="logo__link" href="/"><img class="logo__image" src="images/logo.png" alt="Home"></a>
                 </div>
                 <div class="pageheader__menu-toggle">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    <div class="hamburger">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
                 </div>
                 <nav class="pageheader__nav nav">
                     <ul class="nav__list">
@@ -82,28 +87,28 @@
             </div>
             <div class="features__list-wrapper">
                 <ul class="features__list featurelist">
-                    <li class="featurelist__item">
+                    <li class="featurelist__item fadeinlist">
                         <img class="featurelist__item-image" src="images/heart.png" alt="Heart">
                         <div class="featurelist__texts">
                           <h3 class="featurelist__item-title">True Love</h3>
                           <p class="featurelist__item-text">Bacon ipsum dolor amet boudin rump meatloaf, cupi datat prosciutto in exercita</p>
                         </div>
                     </li>
-                    <li class="featurelist__item">
+                    <li class="featurelist__item fadeinlist">
                         <img class="featurelist__item-image" src="images/compass.png" alt="Compass">
                         <div class="featurelist__texts">
                           <h3 class="featurelist__item-title">User Friendly</h3>
                           <p class="featurelist__item-text">Bacon ipsum dolor amet boudin rump meatloaf, cupi datat prosciutto in exercita</p>
                         </div>
                     </li>
-                    <li class="featurelist__item">
+                    <li class="featurelist__item fadeinlist">
                         <img class="featurelist__item-image" src="images/rocket.png" alt="Rocket">
                         <div class="featurelist__texts">
                           <h3 class="featurelist__item-title">Easy Setup</h3>
                           <p class="featurelist__item-text">Bacon ipsum dolor amet boudin rump meatloaf, cupi datat prosciutto in exercita</p>
                         </div>
                     </li>
-                    <li class="featurelist__item">
+                    <li class="featurelist__item fadeinlist">
                         <img class="featurelist__item-image" src="images/gear.png" alt="Gear">
                         <div class="featurelist__texts">
                           <h3 class="featurelist__item-title">Clean Code</h3>
@@ -119,7 +124,7 @@
         <div class="employee__wrapper wrapper">
             <div class="employee__list-wrapper">
                 <ul class="employee__list">
-                    <li class="employee__list-item">
+                    <li class="employee__list-item hideme">
                         <q class="employee__quote"><p>Bresaola ball tip frankfurter, proident nulla irure cupidatat c Test Test 123 Test Test 123 Blir fint </p></q>
                         <div class="employee__personalia">
                           <img class="employee__image" src="images/Zak.png" alt="Gear">
@@ -127,13 +132,13 @@
                           <p class="employee__role">Game Designer</p>
                         <div>
                     </li>
-                    <li class="employee__list-item employee__list-item--active">
+                    <li class="employee__list-item employee__list-item--active hideme">
                         <q class="employee__quote"><p>Bresaola ball tip frankfurter, proident nulla irure cupidatat c Bresaola ball tip frankfurter, proident nulla irure</p></q>
                         <img class="employee__image" src="images/Aura.png" alt="Aura">
                         <h3 class="employee__name">Aura Brooks</h3>
                         <p class="employee__role">Graphic Designer</p>
                     </li>
-                    <li class="employee__list-item">
+                    <li class="employee__list-item hideme">
                         <q class="employee__quote"><p>Bresaola ball tip frankfurter, proident nulla irure cupidatat c Test Test 123 Test Test 123 Blir fint </p></q>
                         <img class="employee__image" src="images/Peppa.png" alt="Peppa">
                         <h3 class="employee__name">Peppa George</h3>
