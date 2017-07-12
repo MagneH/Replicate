@@ -529,7 +529,6 @@ a {
   flex-direction: column;  /* make main axis vertical */
   justify-content: center; /* center items vertically, in this case */
   align-items: center;     /* center items horizontally, in this case */
-  height: auto;
   flex: 0 0 33%;
   padding: 0 12.5px 30px 12.5px;
   margin: 0;
@@ -549,6 +548,11 @@ a {
   background:#FAFAFC;
   border-radius:2px;
   flex: 0 0 33%;
+}
+
+_::-webkit-full-page-media, _:future, :root .employee__quote {
+  display: block;
+  top: 100px;
 }
 
 /* creates the triangle */
@@ -571,6 +575,10 @@ a {
   padding: 25px;
 }
 
+_::-webkit-full-page-media, _:future, :root .employee__quote p {
+  padding: 0 30px 0 50px;
+}
+
 .employee__quote:before {
   position: relative;
   top: 50px;
@@ -591,6 +599,10 @@ a {
 }
 .employee__list-item--active .employee__quote:after {
   border-top: 10px solid #84D9C1;
+}
+
+_::-webkit-full-page-media, _:future, :root .employee__personalia {
+  padding-top: 100px;
 }
 
 .employee__image {
@@ -644,9 +656,12 @@ a {
 }
 
 @media(max-width: 935px) {
+  .employee{
+
+  }
   .employee__list {
     flex-wrap: wrap;
-    flex-direction: column
+    padding: 20px 0;
   }
   .employee__list-item {
     flex: 0 0 100%;
