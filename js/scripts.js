@@ -18,9 +18,6 @@ $(document).ready(function() {
     });
   	$('.hamburger').click(function(){
   		$(this).toggleClass('open');
-      $('.pageheader__nav').toggle(
-        function(){$('.pageheader__nav').css({'height': '100'});},
-        function(){$('.pageheader__nav').css({'display': '0'});},
-      );
+      $('.pageheader__nav').toggleClass('lt-690-show lt-690-hide', 200);
   	});
 });
