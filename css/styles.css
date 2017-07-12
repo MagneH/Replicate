@@ -622,12 +622,12 @@ _::-webkit-full-page-media, _:future, :root .employee__personalia {
 }
 
 .employee__list-item--active .employee__image {
-  padding: 15px 30px 15px 30px;
+  padding: 15px 30px 15px 40px;
 }
 
 .employee__nav {
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 10px;
 }
 
 .employee__nav-indicators {
@@ -642,17 +642,21 @@ _::-webkit-full-page-media, _:future, :root .employee__personalia {
 }
 
 .employee__nav-indicator {
-  display: flex;
+  display: block;
+  position: relative;
+  height: 5px;
+  width: 25px;
+  border-radius: 1px;
+  margin: 0 2px;
+  background: #E2E2E4;
   align-items: center;        /* for single line flex container */
   align-content: center;      /* for multi-line flex container */
-  flex-direction: column;  /* make main axis vertical */
   justify-content: center; /* center items vertically, in this case */
   align-items: center;     /* center items horizontally, in this case */
-  padding-bottom: 0 12.5px 10px 0;
 }
 
 .employee__nav-indicator--active {
-
+  background: #CCEAE1;
 }
 
 @media(max-width: 935px) {
