@@ -247,12 +247,13 @@ a {
   .nav__list-item:hover {
     background-color: #85d9bf;
   };
-  .nav__link:after {
-    border-bottom: 0;
-  }
   .nav__link:hover:after {
     visibility: hidden;
     transform: scaleX(0);
+    width: 0;
+  }
+  .nav__link:after {
+    width: 0;
   }
   .nav__link--active:after {
     visibility: hidden;
