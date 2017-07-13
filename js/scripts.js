@@ -20,4 +20,17 @@ $(document).ready(function() {
   		$(this).toggleClass('open');
       $('.pageheader__nav').toggleClass('lt-690-show lt-690-hide', 200);
   	});
+    setInterval(function(){
+       // toggle the class every five seconds
+      if ($(window).width() > 690) {
+        $('.employee__nav-indicator').each(function(){
+          var classes = ['employee__nav-indicator employee__nav-indicator--previousactive','employee__nav-indicator employee__nav-indicator--nextactive','employee__nav-indicator employee__nav-indicator--active'];
+          this.className = classes[($.inArray(this.className, classes)+1)%classes.length];
+        });
+        $('.employee__list-item').each(function(){
+          var classes = ['employee__list-item employee__list-item--previousactive hideme','employee__list-item employee__list-item--nextactive hideme','employee__list-item employee__list-item--active hideme'];
+          this.className = classes[($.inArray(this.className, classes)+1)%classes.length];
+        });
+      }
+    }, 5000);
 });
