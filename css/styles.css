@@ -178,6 +178,7 @@ a {
 }
 
 .nav__link {
+  display: block;
   position: relative;
 }
 
