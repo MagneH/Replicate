@@ -241,10 +241,15 @@ a {
     padding: 0;
   }
   .nav__list-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
     background-color: rgba(0, 0, 0, 0);
     border-top: 1px solid #5C5C66;
     margin: 0;
     padding: 0;
+    height: 40px;
   }
   .nav__list-item:nth-child(5) {
     border-bottom: 1px solid #5C5C66;
@@ -270,7 +275,7 @@ a {
     height: 0;
   }
   .lt-690-show{
-    height: 100px;
+    height: 210px;
     display: block;
     margin: 0;
   }
